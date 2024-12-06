@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+    font-size: 16px; /* Comfortable default font size */
+    line-height: 1.6; /* Improve text readability */
+    color: #333; /* Soft dark gray text for good contrast */
+    background-color: #fef6e4; /* Warm, light beige background */
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #5d4037; /* Warm dark brown for headers */
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+.quest-title {
+    text-align: center;
+}
+
+.quest-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distributes space evenly between adverts */
+    gap: 20px; /* Adds spacing between items */
+    max-width: 65%; /* Center the main content area with fixed width */
+    margin: 20px auto;
+  }
+
+  .quest-block {
+    flex: 1 1 calc(33.33% - 20px); /* 3 items per row with space between */
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
+    border: 1px solid #d3b89c;
+    border-radius: 8px;
+    background-color: #fff9f3;
+    padding: 15px;
+  }
+
+  @media (max-width: 768px) {
+    .quest-block {
+      flex: 1 1 calc(50% - 10px); /* Adjust for smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .quest-block {
+      flex: 1 1 100%; /* Stack items for very small screens */
+    }
+}
+
+.quest-block h3 {
+    margin: 0 0 10px;
+}
+
+.quest-block div {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.start-test-link {
+  display: block; /* Forces the button to a new line */
+  margin: 10px auto 0; /* Centers the button */
+  padding: 8px 12px;
+  background-color: #e67e22; /* Soft but noticeable orange */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center; /* Ensures button text is centered */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.start-test-link:hover {
+  background-color: #d66c1e; /* Darker shade on hover */
+  transform: translateY(-2px);
+}
+
+.start-test-link:active {
+  background-color: #c65b1a; /* Even darker on active */
+  transform: translateY(1px);
+}

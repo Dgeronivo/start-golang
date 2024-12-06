@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quests</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="quest-title">
+        <h1>Quests</h1>
+    </div>
+    <div class="quest-container">
+        {{ range . }}
+            <div class="quest-block">
+                <div>
+                    <h3>{{ .Title }}</h3>
+                </div>
+                Description: <div>{{ .Description }}</div>
+                Author: <span>{{ .Author }}</span>
+                <a href="#{{ .Id }}" class="start-test-link">Start</a>
+            </div>
+        {{ end }}
+    </div>
+</body>
+</html>
