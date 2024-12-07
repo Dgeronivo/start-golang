@@ -33,7 +33,7 @@ func renderProcessor(responseContentWriteFunc func(writer io.Writer) error) func
 		ctx.Writer.WriteHeader(200)
 		err := responseContentWriteFunc(ctx.Writer)
 		if err != nil {
-			log.Fatalln(err)
+			log.Println(err)
 			ctx.AbortWithStatus(500)
 			return
 		}

@@ -1,11 +1,12 @@
 package main
 
 import (
-	"log"
+	logging "website/internal/logging"
 )
 
 func main() {
-	log.Fatalln("text")
+	logging.Println("test")
+	logging.Println("test2")
 	// router := router.CreateNew()
 
 	// router.Run("127.0.0.1:80")
