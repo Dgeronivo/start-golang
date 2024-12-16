@@ -1,1 +1,3 @@
-/log/*
+docker/postgres/data
+log/*.log
+.env
